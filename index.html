@@ -5,6 +5,7 @@
 	<head>
 
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<script type="text/javascript" src="main.js"></script>
 
 	</head>
@@ -13,10 +14,32 @@
 
 		<input type="file" id="upload">
 
-		<textarea placeholder="Zip code selection" id="zips"></textarea>
+		<div id="selection" style="visibility: hidden">
 
-		<input type="date" id="date1">
-		<input type="date" id="date2">
+			<textarea placeholder="Zip code filter" id="zips" cols=100 rows=4></textarea>
+
+			<br>
+
+			Begin Date:<input type="date" id="date1">
+			End Date:<input type="date" id="date2">
+
+			<button type="button" id="filterbutton">Filter Parents</button>
+
+		</div>
+
+		<table id="table"></table>
+
+		<div id="emaildiv" style="visibility: hidden">
+
+			<button type="button" id="selectall">Select All</button>
+			<button type="button" id="selectnone">Deselect All</button>
+			<button type="button" id="makelist">Make Email List</button>
+
+			<br>
+			
+			<textarea placeholder="Email list will appear here" id="emaillist" cols=100 rows=4></textarea>
+
+		</div>
 
 	</body>
 
