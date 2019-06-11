@@ -178,10 +178,10 @@ window.onload = function()
 					if (iname == -1 && firstsplit[i] == "Name") iname = i;
 					else if (iemail == -1 && firstsplit[i] == "Email") iemail = i;
 					else if (izip1 == -1 && firstsplit[i].includes("address_zip")) izip1 = i;
-					else if (izip2 == -1 && firstsplit[i].includes("custom_5")) izip2 = i;
-					else if (icheck == -1 && firstsplit[i].includes("custom_4")) icheck = i;
-					else if (iyoung == -1 && firstsplit[i].includes("custom_3")) iyoung = i;
-					else if (idate == -1 && firstsplit[i].includes("custom_2")) idate = i;
+					else if (izip2 == -1 && firstsplit[i].includes("Zip/Postal")) izip2 = i;
+					else if (icheck == -1 && firstsplit[i].includes("due/have")) icheck = i;
+					else if (iyoung == -1 && firstsplit[i].includes("(if none,")) iyoung = i;
+					else if (idate == -1 && firstsplit[i].includes("MM/DD/YYYY")) idate = i;
 
 				}
 
