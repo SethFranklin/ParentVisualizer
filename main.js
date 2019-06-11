@@ -130,8 +130,9 @@ window.onload = function()
 	{
 
 		var file = e.target.files[0];
+		var re = /(?:\.([^.]+))?$/;
 
-		if (file.type == "text/csv")
+		if (re.exec(file.name)[1] == "csv")
 		{
 
 			var read = new FileReader();
